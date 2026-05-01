@@ -1,2 +1,2 @@
-# Wani_Wallet
-Privacy, Terms and Condition Pages
+# Wani Wallet
+1. Terms & Conditions  
