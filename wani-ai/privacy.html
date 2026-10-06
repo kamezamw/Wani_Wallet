@@ -28,9 +28,9 @@
 
 <h2>3. What we collect</h2>
 <ul>
-<li><strong>Account:</strong> your name, email address and a hashed password (we never see the password itself).</li>
+<li><strong>Account:</strong> your name and email address. Your login (a password or Google sign-in) is held by our sign-in provider, Clerk; we never see your password.</li>
 <li><strong>Payments from bank SMS:</strong> amount, date and time, payee or merchant, bank, the last digits of the account, the balance reported, and the transaction reference.</li>
-<li><strong>Original SMS text:</strong> only if you switch on "Keep original SMS text". It is off by default, and switching it off deletes the stored texts.</li>
+<li><strong>Original SMS text:</strong> kept to help fix misread payments. "Keep original SMS text" is on by default; switching it off, at sign-up or later in Settings, deletes the stored texts.</li>
 <li><strong>What you add:</strong> categories, corrections, budgets, your emergency fund, and chat messages.</li>
 <li><strong>Sign-in sessions:</strong> device type and IP address, to keep your account secure and let you sign out other devices.</li>
 </ul>
@@ -46,7 +46,8 @@
 
 <h2>5. Who else sees it</h2>
 <ul>
-<li><strong>Anthropic (United States), only if AI is on.</strong> For sorting it receives the payee name, the payment description with phone and account numbers masked, a typical amount, and your category names. Payees that are only a phone number are never sent. For chat it receives your question and the figures needed to answer it. Under Anthropic's commercial terms this data is not used to train their models.</li>
+<li><strong>Anthropic (United States), only if AI is on.</strong> For sorting it receives the payee name, the payment description with phone and account numbers masked, a typical amount, and your category names. Payees that are only a phone number are never sent. For chat it receives your question and the figures needed to answer it. For the weekly note and the payday wrap it receives that period’s totals by category. Under Anthropic's commercial terms this data is not used to train their models.</li>
+<li><strong>Clerk (United States).</strong> Runs sign-in. It holds your email address, name, password (in a form it cannot read back) or your Google sign-in, and records of the devices you sign in on. Deleting your Wani account deletes your Clerk login too.</li>
 <li><strong>Google (Firebase, United States).</strong> Delivers notifications to your phone (it receives a device token and the notification text, such as a daily total), and receives crash reports when the app fails (technical details of the error, never your payments). <strong>Only if you switch on usage analytics</strong>, it also receives which screens and features you use, with no amounts, payees, messages or account details. Advertising identifiers are never collected.</li>
 <li><strong>Our hosting provider</strong> stores the database and encrypted backups on our behalf, under contract.</li>
 <li><strong>Other users never see your data.</strong> When several people independently correct the same <em>business</em> payee (for example a supermarket) to the same category, Wani can use that category for everyone. This never includes names, amounts, or payees that are phone numbers.</li>
